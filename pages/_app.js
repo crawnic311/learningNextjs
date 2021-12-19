@@ -5,7 +5,7 @@ import Login from './login/login'
 function MyApp({ Component, pageProps }) {
   const adminUser = {
     email: 'dillon.craw@gmail.com',
-    password: 'Smouds311*',
+    password: '123',
   }
 
   const [user, setUser] = useState({ name: '', email: '' })
