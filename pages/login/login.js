@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Login = () => {
+const LoginForm = (props) => {
+  const Login = props.Login
+  const error = props.error
+
+  const [details, setDetails] = useState({ email: '', password: '' })
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+
+    Login(details)
+  }
+
   return (
     <div className="Login-Wrapper">
-      <form className="Login-Form">
+      <form className="Login-Form" onSubmit={submitHandler}>
         {/*EROOR*/}
         <div className="formgroup">
           <input
@@ -11,6 +22,8 @@ const Login = () => {
             placeholder="Username"
             name="username"
             id="username"
+            onChange={(e) => setDetails({ ...details, email: e.target.value })}
+            value={details.email}
           />
         </div>
         <div className="formgroup">
@@ -19,6 +32,10 @@ const Login = () => {
             placeholder="Password"
             name="password"
             id="password"
+            onChange={(e) =>
+              setDetails({ ...details, password: e.target.value })
+            }
+            value={details.password}
           />
           <span>Forgot Password?</span>
         </div>
@@ -32,4 +49,4 @@ const Login = () => {
     </div>
   )
 }
-export default Login
+export default LoginForm

@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import React, { useState } from 'react'
-import Login from './login/login'
+import LoginForm from './login/login'
 
 function MyApp({ Component, pageProps }) {
   const adminUser = {
@@ -11,11 +11,20 @@ function MyApp({ Component, pageProps }) {
   const [user, setUser] = useState({ name: '', email: '' })
   const [error, setError] = useState('')
 
-  const login = (details) => {
+  const Login = (details) => {
     console.log(details)
+
+    if (
+      details.email == adminUser.email &&
+      details.password == adminUser.password
+    ) {
+      console.log('Logged in')
+    } else {
+      console.log('Details do not match')
+    }
   }
 
-  const logout = () => {
+  const Logout = () => {
     console.log('Logout')
   }
 
@@ -30,7 +39,7 @@ function MyApp({ Component, pageProps }) {
           <button>Logout</button>
         </div>
       ) : (
-        <Login />
+        <LoginForm Login={Login} error={error} />
       )}
     </div>
   )
