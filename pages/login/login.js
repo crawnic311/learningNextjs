@@ -4,7 +4,7 @@ const LoginForm = (props) => {
   const Login = props.Login
   const error = props.error
 
-  const [details, setDetails] = useState({ email: '', password: '' })
+  const [details, setDetails] = useState({ name: '', email: '', password: '' })
 
   const submitHandler = (e) => {
     e.preventDefault()
@@ -15,13 +15,23 @@ const LoginForm = (props) => {
   return (
     <div className="Login-Wrapper">
       <form className="Login-Form" onSubmit={submitHandler}>
-        {/*EROOR*/}
+        {error != '' ? <div className="error">{error}</div> : ''}
+        <div className="formgroup">
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            onChange={(e) => setDetails({ ...details, name: e.target.value })}
+            value={details.name}
+          />
+        </div>
         <div className="formgroup">
           <input
             type="text"
             placeholder="Email"
-            name="username"
-            id="username"
+            name="email"
+            id="email"
             onChange={(e) => setDetails({ ...details, email: e.target.value })}
             value={details.email}
           />

@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     password: '123',
   }
 
-  const [user, setUser] = useState({ email: '', password: '' })
+  const [user, setUser] = useState({ name: '', email: '', password: '' })
   const [error, setError] = useState('')
 
   const Login = (details) => {
@@ -20,17 +20,20 @@ function MyApp({ Component, pageProps }) {
     ) {
       console.log('Logged in')
       setUser({
+        name: details.name,
         email: details.email,
         password: details.password,
       })
     } else {
       console.log('Details do not match')
+      setError('Details do not match')
     }
   }
 
   const Logout = () => {
     console.log('Logout')
     setUser({
+      name: '',
       email: '',
       password: '',
     })
@@ -42,7 +45,7 @@ function MyApp({ Component, pageProps }) {
         <div className="Welcome">
           <h2>
             Welcome,
-            <span> {user.email}</span>
+            <span> {user.name}</span>
           </h2>
           <button onClick={Logout}>Logout</button>
         </div>
