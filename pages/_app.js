@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     password: '123',
   }
 
-  const [user, setUser] = useState({ name: '', email: '' })
+  const [user, setUser] = useState({ email: '', password: '' })
   const [error, setError] = useState('')
 
   const Login = (details) => {
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     ) {
       console.log('Logged in')
       setUser({
-        username: details.email,
+        email: details.email,
         password: details.password,
       })
     } else {
@@ -30,6 +30,10 @@ function MyApp({ Component, pageProps }) {
 
   const Logout = () => {
     console.log('Logout')
+    setUser({
+      email: '',
+      password: '',
+    })
   }
 
   return (
@@ -38,9 +42,9 @@ function MyApp({ Component, pageProps }) {
         <div className="Welcome">
           <h2>
             Welcome,
-            <span>{user.name}</span>
+            <span> {user.email}</span>
           </h2>
-          <button>Logout</button>
+          <button onClick={Logout}>Logout</button>
         </div>
       ) : (
         <LoginForm Login={Login} error={error} />
