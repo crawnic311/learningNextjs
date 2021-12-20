@@ -19,7 +19,7 @@ const LoginForm = (props) => {
         <div className="formgroup">
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Email"
             name="username"
             id="username"
             onChange={(e) => setDetails({ ...details, email: e.target.value })}

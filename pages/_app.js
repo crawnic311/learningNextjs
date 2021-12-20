@@ -19,6 +19,10 @@ function MyApp({ Component, pageProps }) {
       details.password == adminUser.password
     ) {
       console.log('Logged in')
+      setUser({
+        username: details.email,
+        password: details.password,
+      })
     } else {
       console.log('Details do not match')
     }
