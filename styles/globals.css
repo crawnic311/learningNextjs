@@ -1,17 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+
 html {
   display: flex;
-  background-color: cadetblue;
+  background-color: #34353b;
   align-items: center;
   justify-content: center;
 }
+
 .Login-Wrapper {
+  background-color: aliceblue;
   display: flex;
   height: 480px;
   width: 460px;
-  border: 2px solid red;
   justify-content: center;
   align-items: center;
-  margin: 23vh 0;
+  margin: 28vh 0;
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(113, 93%, 48%),
+    #fe4880
+  );
+}
+
+.Login-Form {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  padding: 36px 21px;
+  z-index: 1;
 }
 
 .formgroup {
@@ -25,10 +46,11 @@ html {
   max-height: 7vh;
   width: stretch;
   min-height: 50px;
-  min-width: 200px;
+  min-width: 276px;
   text-align: left;
-  font-size: 26px;
+  font-size: 16px;
   border-radius: 10px;
+  padding-left: 20px;
 }
 
 .Forgot-Password {
@@ -39,11 +61,22 @@ html {
 
 #login {
   text-align: center;
-  background-color: chartreuse;
+  background-color: #43d41a;
+  font-size: 26px;
+  padding-left: 0;
 }
 
 .New-Here {
   margin-top: 10px;
   text-align: center;
   display: block;
+}
+
+.error-wrapper {
+  display: inline-block;
+  height: 14px;
+}
+
+.error {
+  color: red;
 }

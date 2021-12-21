@@ -15,7 +15,9 @@ const LoginForm = (props) => {
   return (
     <div className="Login-Wrapper">
       <form className="Login-Form" onSubmit={submitHandler}>
-        {error != '' ? <div className="error">{error}</div> : ''}
+        <div className="error-wrapper">
+          {error != '' ? <p className="error">{error}</p> : ''}
+        </div>
         <div className="formgroup">
           <input
             type="text"

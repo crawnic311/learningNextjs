@@ -25,8 +25,8 @@ function MyApp({ Component, pageProps }) {
         password: details.password,
       })
     } else {
-      console.log('Details do not match')
-      setError('Details do not match')
+      console.log('Details do not match!')
+      setError('Details do not match!')
     }
   }
 
