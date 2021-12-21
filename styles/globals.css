@@ -64,6 +64,15 @@ html {
   background-color: #43d41a;
   font-size: 26px;
   padding-left: 0;
+  background-image: linear-gradient(to right, #43d41a, #43d41a, #fe4880);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#login:hover {
+  background-position: 100% 0%;
 }
 
 .New-Here {
@@ -79,4 +88,18 @@ html {
 
 .error {
   color: red;
+}
+
+.Welcome {
+  width: 100%;
+  max-width: 480px;
+  background-color: aliceblue;
+  padding: 15px, 30px;
+}
+
+.Welcome h2 {
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }

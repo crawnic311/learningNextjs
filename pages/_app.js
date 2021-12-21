@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import React, { useState } from 'react'
 import LoginForm from './login/login'
+import HomeHeader from './homepage/homepage'
 
 function MyApp({ Component, pageProps }) {
   const adminUser = {
@@ -42,13 +43,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="Foody-App">
       {user.email != '' ? (
-        <div className="Welcome">
+        <header className="Foody-Header">
+          <HomeHeader />
           <h2>
             Welcome,
             <span> {user.name}</span>
           </h2>
           <button onClick={Logout}>Logout</button>
-        </div>
+        </header>
       ) : (
         <div className="Foody-Login">
           <LoginForm Login={Login} error={error} />
