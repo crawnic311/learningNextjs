@@ -1,25 +1,28 @@
 html {
+  display: flex;
   background-color: cadetblue;
+  align-items: center;
+  justify-content: center;
 }
 .Login-Wrapper {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  height: 480px;
+  width: 460px;
   border: 2px solid red;
   justify-content: center;
   align-items: center;
+  margin: 23vh 0;
 }
 
 .formgroup {
   margin: 25px 0px;
-  border: 2px solid red;
 }
 
 #name,
 #email,
 #password,
 #login {
-  height: 7vh;
+  max-height: 7vh;
   width: stretch;
   min-height: 50px;
   min-width: 200px;
@@ -28,9 +31,10 @@ html {
   border-radius: 10px;
 }
 
-span {
+.Forgot-Password {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 8px;
+  margin-left: 2px;
 }
 
 #login {
@@ -38,7 +42,7 @@ span {
   background-color: chartreuse;
 }
 
-a {
+.New-Here {
   margin-top: 10px;
   text-align: center;
   display: block;

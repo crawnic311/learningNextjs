@@ -47,11 +47,13 @@ const LoginForm = (props) => {
             }
             value={details.password}
           />
-          <span>Forgot Password?</span>
+          <span className="Forgot-Password">Forgot Password?</span>
         </div>
         <div className="formgroup">
           <input type="submit" value="LOGIN" id="login" />
-          <a href="">New here? Create an account.</a>
+          <a href="" className="New-Here">
+            New here? Create an account.
+          </a>
         </div>
       </form>
     </div>
