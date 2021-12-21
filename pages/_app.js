@@ -50,7 +50,9 @@ function MyApp({ Component, pageProps }) {
           <button onClick={Logout}>Logout</button>
         </div>
       ) : (
-        <LoginForm Login={Login} error={error} />
+        <div className="Foody-Login">
+          <LoginForm Login={Login} error={error} />
+        </div>
       )}
     </div>
   )
