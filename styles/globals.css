@@ -25,14 +25,21 @@ html {
   min-width: 200px;
   text-align: left;
   font-size: 26px;
+  border-radius: 10px;
 }
 
 span {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 #login {
   text-align: center;
   background-color: chartreuse;
+}
+
+a {
+  margin-top: 10px;
+  text-align: center;
+  display: block;
 }

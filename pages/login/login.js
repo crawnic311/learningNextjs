@@ -51,9 +51,7 @@ const LoginForm = (props) => {
         </div>
         <div className="formgroup">
           <input type="submit" value="LOGIN" id="login" />
-          <span>
-            <a href="">New here? Create and account.</a>
-          </span>
+          <a href="">New here? Create an account.</a>
         </div>
       </form>
     </div>
