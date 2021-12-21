@@ -50,7 +50,7 @@ const LoginForm = (props) => {
           <span>Forgot Password?</span>
         </div>
         <div className="formgroup">
-          <input type="submit" value="LOGIN" />
+          <input type="submit" value="LOGIN" id="login" />
           <span>
             <a href="">New here? Create and account.</a>
           </span>

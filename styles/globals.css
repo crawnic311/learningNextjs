@@ -17,9 +17,22 @@ html {
 
 #name,
 #email,
-#password {
+#password,
+#login {
   height: 7vh;
-  width: 25vw;
+  width: stretch;
   min-height: 50px;
   min-width: 200px;
+  text-align: left;
+  font-size: 26px;
+}
+
+span {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#login {
+  text-align: center;
+  background-color: chartreuse;
 }
