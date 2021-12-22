@@ -4,16 +4,25 @@ const HomeHeader = () => {
   return (
     <div className="Site-Header-Inner">
       <div className="Header-Logo">
-        <div className="Site-Nave-Wrapper">
-          <nav className="Site-Nav-Inner">
-            <ul className="Nav-List">
-              <li className="Nav-Item" id="create"></li>
-              <li className="Nav-Item" id="nutrition_calc"></li>
-              <li className="Nav-Item" id="about"></li>
-              <li className="Nav-Item" id="logout"></li>
-            </ul>
-          </nav>
-        </div>
+        <div className="Header-Logo-Inner">Foody</div>
+      </div>
+      <div className="Site-Nav-Wrapper">
+        <nav className="Site-Nav-Inner">
+          <ul className="Nav-List">
+            <li className="Nav-Item" id="create">
+              <span>Create</span>
+            </li>
+            <li className="Nav-Item" id="nutrition_calc">
+              <span>Nutrition Calculator</span>
+            </li>
+            <li className="Nav-Item" id="about">
+              <span>About</span>
+            </li>
+            <li className="Nav-Item" id="logout">
+              <span>Logout</span>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   )

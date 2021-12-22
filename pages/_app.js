@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import React, { useState } from 'react'
 import LoginForm from './login/login'
-import HomeHeader from './homepage/homepage'
+import HomeHeader from './homepage/homeheader'
 
 function MyApp({ Component, pageProps }) {
   const adminUser = {
@@ -45,11 +45,7 @@ function MyApp({ Component, pageProps }) {
       {user.email != '' ? (
         <header className="Foody-Header">
           <HomeHeader />
-          <h2>
-            Welcome,
-            <span> {user.name}</span>
-          </h2>
-          <button onClick={Logout}>Logout</button>
+          {/*<button onClick={Logout}>Logout</button>*/}
         </header>
       ) : (
         <div className="Foody-Login">

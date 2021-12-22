@@ -5,6 +5,8 @@
   font-family: montserrat, sans-serif;
 }
 
+/* Login Styling */
+
 html {
   display: flex;
   background-color: #34353b;
@@ -102,4 +104,61 @@ html {
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 30px;
+}
+
+/* Home Page Styling */
+.Foody-Header {
+  border: 2px solid turquoise;
+  display: flex;
+  width: 100vw;
+}
+.Site-Header-Inner {
+  width: 1200px;
+  margin: auto;
+}
+
+.Header-Logo {
+  border: 2px solid green;
+  float: left;
+  width: 220px;
+  height: 75px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.Header-Logo-Inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  text-transform: lowercase;
+}
+
+.Site-Nav-Wrapper {
+  float: right;
+  height: ;
+  width: 55vw;
+  min-width: 750px;
+}
+
+.Site-Nave-Inner {
+  border: 2px solid red;
+}
+
+.Nav-List {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Nav-Item {
+  border: 1px solid yellow;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 75px;
+  width: fit-content;
+}
+
+.Nav-Item span {
+  color: hsl(113, 93%, 48%);
 }
