@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const HomeHeader = () => {
+  let navTo = ''
+
+  const navigateHandler = (navTo) => {}
   return (
     <div className="Site-Header-Inner">
       <div className="Header-Logo">
@@ -9,6 +12,9 @@ const HomeHeader = () => {
       <div className="Site-Nav-Wrapper">
         <nav className="Site-Nav-Inner">
           <ul className="Nav-List">
+            <li className="Nav-Item" id="recipe">
+              <span>Recipes</span>
+            </li>
             <li className="Nav-Item" id="create">
               <span>Create</span>
             </li>

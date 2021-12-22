@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import LoginForm from './login/login'
 import HomeHeader from './homepage/homeheader'
 import Homepage from './homepage/homepage'
-import '../public/Salmon-Stew-Recipe.png'
+import RecipeNav from './homepage/recipenav'
+import CreateRecipe from './create/createrecipe'
 
 function MyApp({ Component, pageProps }) {
   const adminUser = {
@@ -13,6 +14,12 @@ function MyApp({ Component, pageProps }) {
 
   const [user, setUser] = useState({ name: '', email: '', password: '' })
   const [error, setError] = useState('')
+  const [nav, setNav] = useState({
+    recipes: true,
+    create: false,
+    nutrition: false,
+    about: false,
+  })
 
   const Login = (details) => {
     console.log(details)
@@ -42,6 +49,10 @@ function MyApp({ Component, pageProps }) {
     })
   }
 
+  const Navigator = (navigate) => {
+    setNav({})
+  }
+
   return (
     <div className="Foody-App">
       {user.email != '' ? (
@@ -50,8 +61,14 @@ function MyApp({ Component, pageProps }) {
             <HomeHeader />
             {/*<button onClick={Logout}>Logout</button>*/}
           </header>
-          <div className="Foody-Header-Homepage">
+          {/*<div className="Foody-Header-Homepage">
             <Homepage />
+            <div className="Recipe-Nav-Wrapper">
+              <RecipeNav />
+            </div>
+      </div> */}
+          <div className="-Foody-Create">
+            <CreateRecipe />
           </div>
         </>
       ) : (

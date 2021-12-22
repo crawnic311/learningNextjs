@@ -92,20 +92,6 @@ html {
   color: red;
 }
 
-.Welcome {
-  width: 100%;
-  max-width: 480px;
-  background-color: aliceblue;
-  padding: 15px, 30px;
-}
-
-.Welcome h2 {
-  color: black;
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-
 /* Home Page Header Styling */
 .Foody-Header {
   border: 2px solid turquoise;
@@ -158,6 +144,7 @@ html {
   align-items: center;
   height: 75px;
   width: fit-content;
+  cursor: pointer;
 }
 
 .Nav-Item span {
@@ -169,21 +156,67 @@ html {
 .Foody-Header-Homepage {
   border: 2px solid orange;
   display: flex;
-  height: 90vh;
-  min-height: 700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 89vh;
+  min-height: 630px;
 }
 
 .Recipe {
+  display: flex;
+  flex-direction: column;
   border: 2px solid yellow;
-  width: 405px;
+  width: 410px;
+  height: 424px;
 }
 
 .Recipe-Image {
-  height: 270px;
   width: 405px;
+  height: 320px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .Recipe-Description {
   border: 2px solid red;
   width: 405px;
+  min-height: 100px;
 }
+
+/* Home Page Recipe Nav Buttons */
+.Recipe-Nav-Wrapper {
+  border: 1px solid red;
+}
+
+.Recipe-Nav-Inner {
+  border: 1px solid blue;
+  width: 500px;
+  height: 70px;
+}
+
+.Recipe-Nav-Inner button {
+  border: 1px solid green;
+  margin-top: 20px;
+  height: 30px;
+  width: 75px;
+  background-image: linear-gradient(to right, #43d41a, #43d41a, #fe4880);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.Recipe-Nav-Inner button:hover {
+  background-position: 100% 0%;
+}
+
+#recipe-back {
+  float: left;
+}
+
+#recipe-forward {
+  float: right;
+}
+
+/* Create Recipe Styling */
