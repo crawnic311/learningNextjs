@@ -220,3 +220,15 @@ html {
 }
 
 /* Create Recipe Styling */
+.Foody-Create {
+  border: 2px solid red;
+  display: flex;
+  height: 89vh;
+  min-height: 630px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Create-Form-Group {
+  margin-top: 20px;
+}

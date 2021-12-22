@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps }) {
               <RecipeNav />
             </div>
       </div> */}
-          <div className="-Foody-Create">
+          <div className="Foody-Create">
             <CreateRecipe />
           </div>
         </>
