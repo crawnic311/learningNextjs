@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import React, { useState } from 'react'
 import LoginForm from './login/login'
 import HomeHeader from './homepage/homeheader'
+import Homepage from './homepage/homepage'
+import '../public/Salmon-Stew-Recipe.png'
 
 function MyApp({ Component, pageProps }) {
   const adminUser = {
@@ -43,10 +45,15 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="Foody-App">
       {user.email != '' ? (
-        <header className="Foody-Header">
-          <HomeHeader />
-          {/*<button onClick={Logout}>Logout</button>*/}
-        </header>
+        <>
+          <header className="Foody-Header">
+            <HomeHeader />
+            {/*<button onClick={Logout}>Logout</button>*/}
+          </header>
+          <div className="Foody-Header-Homepage">
+            <Homepage />
+          </div>
+        </>
       ) : (
         <div className="Foody-Login">
           <LoginForm Login={Login} error={error} />

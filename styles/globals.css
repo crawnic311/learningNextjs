@@ -106,12 +106,13 @@ html {
   margin-bottom: 30px;
 }
 
-/* Home Page Styling */
+/* Home Page Header Styling */
 .Foody-Header {
   border: 2px solid turquoise;
   display: flex;
   width: 100vw;
 }
+
 .Site-Header-Inner {
   width: 1200px;
   margin: auto;
@@ -161,4 +162,28 @@ html {
 
 .Nav-Item span {
   color: hsl(113, 93%, 48%);
+}
+
+/* Home Page Recipe Card Styling */
+
+.Foody-Header-Homepage {
+  border: 2px solid orange;
+  display: flex;
+  height: 90vh;
+  min-height: 700px;
+}
+
+.Recipe {
+  border: 2px solid yellow;
+  width: 405px;
+}
+
+.Recipe-Image {
+  height: 270px;
+  width: 405px;
+}
+
+.Recipe-Description {
+  border: 2px solid red;
+  width: 405px;
 }
