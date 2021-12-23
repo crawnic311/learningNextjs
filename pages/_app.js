@@ -5,6 +5,8 @@ import HomeHeader from './homepage/homeheader'
 import Homepage from './homepage/homepage'
 import RecipeNav from './homepage/recipenav'
 import CreateRecipe from './create/createrecipe'
+import Navbar from './navbar'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 function MyApp({ Component, pageProps }) {
   const adminUser = {
@@ -61,8 +63,11 @@ function MyApp({ Component, pageProps }) {
     <div className="Foody-App">
       {user.email != '' ? (
         <>
+          <Router>
+            <Navbar />
+          </Router>
           <header className="Foody-Header">
-            <HomeHeader />
+            {/*<HomeHeader />*/}
             {/*<button onClick={Logout}>Logout</button>*/}
           </header>
           {/*<div className="Foody-Header-Homepage">

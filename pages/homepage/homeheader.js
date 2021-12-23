@@ -13,16 +13,16 @@ const HomeHeader = () => {
         <nav className="Site-Nav-Inner">
           <ul className="Nav-List">
             <li className="Nav-Item" id="recipe">
-              <span>Recipes</span>
+              <a href=''>Recipes</a>
             </li>
             <li className="Nav-Item" id="create">
-              <span>Create</span>
+              <a>Create</a>
             </li>
             <li className="Nav-Item" id="nutrition_calc">
-              <span>Nutrition Calculator</span>
+              <a>Nutrition Calculator</a>
             </li>
             <li className="Nav-Item" id="about">
-              <span>About</span>
+              <a>About</a>
             </li>
             <li className="Nav-Item" id="logout">
               <span>Logout</span>
