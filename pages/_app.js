@@ -53,6 +53,10 @@ function MyApp({ Component, pageProps }) {
     setNav({})
   }
 
+  const Create = (recipe) => {
+    console.log(recipe)
+  }
+
   return (
     <div className="Foody-App">
       {user.email != '' ? (
@@ -68,7 +72,7 @@ function MyApp({ Component, pageProps }) {
             </div>
       </div> */}
           <div className="Foody-Create">
-            <CreateRecipe />
+            <CreateRecipe Create={Create} />
           </div>
         </>
       ) : (
