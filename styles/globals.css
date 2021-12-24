@@ -2,233 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: montserrat, sans-serif;
 }
 
-/* Login Styling */
-
-html {
-  display: flex;
-  background-color: #34353b;
-  align-items: center;
-  justify-content: center;
+html,
+body,
+body * {
+  font-family: 'Open Sans', sans-serif;
+  color: inherit;
+  background-color: inherit;
+  font-size: 62.5%;
 }
 
-.Login-Wrapper {
-  background-color: aliceblue;
-  display: flex;
-  height: 480px;
-  width: 460px;
-  justify-content: center;
-  align-items: center;
-  margin: 28vh 0;
-  background-image: linear-gradient(
-    to bottom right,
-    hsl(113, 93%, 48%),
-    #fe4880
-  );
-}
-
-.Login-Form {
-  position: relative;
-  display: block;
-  background-color: #fff;
-  padding: 36px 21px;
-  z-index: 1;
-}
-
-.formgroup {
-  margin: 25px 0px;
-}
-
-#name,
-#email,
-#password,
-#login {
-  max-height: 7vh;
-  width: stretch;
-  min-height: 50px;
-  min-width: 276px;
-  text-align: left;
-  font-size: 16px;
-  border-radius: 10px;
-  padding-left: 20px;
-}
-
-.Forgot-Password {
-  display: inline-block;
-  margin-top: 8px;
-  margin-left: 2px;
-}
-
-#login {
-  text-align: center;
-  background-color: #43d41a;
-  font-size: 26px;
-  padding-left: 0;
-  background-image: linear-gradient(to right, #43d41a, #43d41a, #fe4880);
-  background-size: 200%;
-  background-position: 0%;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-#login:hover {
-  background-position: 100% 0%;
-}
-
-.New-Here {
-  margin-top: 10px;
-  text-align: center;
-  display: block;
-}
-
-.error-wrapper {
-  display: inline-block;
-  height: 14px;
-}
-
-.error {
-  color: red;
-}
-
-/* Home Page Header Styling */
-.Foody-Header {
-  border: 2px solid turquoise;
-  display: flex;
-  width: 100vw;
-}
-
-.Site-Header-Inner {
-  width: 1200px;
-  margin: auto;
-}
-
-.Header-Logo {
-  border: 2px solid green;
-  float: left;
-  width: 220px;
-  height: 75px;
-  color: aliceblue;
-  text-align: center;
-}
-
-.Header-Logo-Inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 75px;
-  text-transform: lowercase;
-}
-
-.Site-Nav-Wrapper {
-  float: right;
-  height: 75px;
-  width: 55vw;
-  min-width: 750px;
-}
-
-.Site-Nave-Inner {
-  border: 2px solid red;
-}
-
-.Nav-List {
-  display: flex;
-  justify-content: space-between;
-}
-
-.Nav-Item {
-  border: 1px solid yellow;
+li {
   list-style: none;
-  display: flex;
-  align-items: center;
-  height: 75px;
-  width: fit-content;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  background: transparent;
+  border: none;
   cursor: pointer;
+  padding: 0;
 }
 
-.Nav-Item span {
-  color: hsl(113, 93%, 48%);
+button:hover,
+button:focus {
+  background: transparent;
 }
 
-/* Home Page Recipe Card Styling */
-
-.Foody-Header-Homepage {
-  border: 2px solid orange;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 89vh;
-  min-height: 630px;
-}
-
-.Recipe {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid yellow;
-  width: 410px;
-  height: 424px;
-}
-
-.Recipe-Image {
-  width: 405px;
-  height: 320px;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.Recipe-Description {
-  border: 2px solid red;
-  width: 405px;
-  min-height: 100px;
-}
-
-/* Home Page Recipe Nav Buttons */
-.Recipe-Nav-Wrapper {
-  border: 1px solid red;
-}
-
-.Recipe-Nav-Inner {
-  border: 1px solid blue;
-  width: 500px;
-  height: 70px;
-}
-
-.Recipe-Nav-Inner button {
-  border: 1px solid green;
-  margin-top: 20px;
-  height: 30px;
-  width: 75px;
-  background-image: linear-gradient(to right, #43d41a, #43d41a, #fe4880);
-  background-size: 200%;
-  background-position: 0%;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.Recipe-Nav-Inner button:hover {
-  background-position: 100% 0%;
-}
-
-#recipe-back {
-  float: left;
-}
-
-#recipe-forward {
-  float: right;
-}
-
-/* Create Recipe Styling */
-.Foody-Create {
-  border: 2px solid red;
-  display: flex;
-  height: 89vh;
-  min-height: 630px;
-  align-items: center;
-  justify-content: center;
-}
-
-.Create-Form-Group {
-  margin-top: 20px;
+button:focus {
+  outline: none;
 }
