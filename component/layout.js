@@ -28,6 +28,11 @@ export default function Layout({ children }) {
               </Link>
             </li>
             <li class={styles.navitem}>
+              <Link href="/">
+                <a class={styles.navlink}>Create Recipe</a>
+              </Link>
+            </li>
+            <li class={styles.navitem}>
               <Link href="/about">
                 <a class={styles.navlink}>About</a>
               </Link>
@@ -35,6 +40,11 @@ export default function Layout({ children }) {
             <li class={styles.navitem}>
               <Link href="/contact">
                 <a class={styles.navlink}>Contact</a>
+              </Link>
+            </li>
+            <li class={styles.navitem}>
+              <Link href="/">
+                <a class={styles.navlink}>Logout</a>
               </Link>
             </li>
           </ul>
@@ -53,18 +63,17 @@ export default function Layout({ children }) {
         </nav>
       </header>
       {children}
-      <div className={styles2.container}>
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <img src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </a>
-        </footer>
-      </div>
+
+      <footer className={styles2.footer}>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by{' '}
+          <img src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+        </a>
+      </footer>
     </>
   )
 }
