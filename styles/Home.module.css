@@ -1,3 +1,9 @@
+.header {
+  display: flex;
+  border-bottom: 1px solid aliceblue;
+  height: 75px;
+}
+
 .container {
   padding: 0 2rem;
 }
@@ -16,7 +22,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid aliceblue;
   justify-content: center;
   align-items: center;
 }
