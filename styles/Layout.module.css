@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 6rem;
   width: stretch;
 }
 
@@ -38,12 +38,22 @@
 .navlink {
   font-size: 2rem;
   font-weight: 400;
-  color: #475569;
+  color: black;
   text-transform: uppercase;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #43d41a;
+  font-size: 26px;
+  padding: 0.25rem 0.5rem;
+  background-image: linear-gradient(to right, #43d41a, #43d41a, #fe4880);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 .navlink:hover {
-  color: #482ff7;
+  background-position: 100% 0%;
 }
 
 .navlogo {
