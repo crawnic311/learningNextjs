@@ -13,7 +13,7 @@ export default function Layout({ children }) {
       <header class={styles2.header}>
         <nav class={styles.navbar}>
           <Link href="/">
-            <a class={styles.navlogo}>[BrandLogo]</a>
+            <a class={styles.navlogo}>foody</a>
           </Link>
           <ul
             class={

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Homepage = () => {
+const RecipeList = () => {
   return (
     <div className="Recipe-Holder">
       <div className="Recipe">
@@ -18,4 +18,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage
+export default RecipeList
