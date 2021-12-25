@@ -63,7 +63,6 @@ export default function Layout({ children }) {
         </nav>
       </header>
       {children}
-
       <footer className={styles2.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

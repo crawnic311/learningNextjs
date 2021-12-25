@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styles from '../styles/loginform.module.css'
 
 const LoginForm = (props) => {
   const Login = props.Login
@@ -13,47 +14,47 @@ const LoginForm = (props) => {
   }
 
   return (
-    <div className="Login-Wrapper">
-      <form className="Login-Form" onSubmit={submitHandler}>
-        <div className="error-wrapper">
-          {error != '' ? <p className="error">{error}</p> : ''}
+    <div className={styles.LoginWrapper}>
+      <form className={styles.LoginForm} onSubmit={submitHandler}>
+        <div className={styles.ErrorWrapper}>
+          {error != '' ? <p className={styles.Error}>{error}</p> : ''}
         </div>
-        <div className="formgroup">
+        <div className={styles.formgroup}>
           <input
             type="text"
             placeholder="Name"
             name="name"
-            id="name"
+            id={styles.name}
             onChange={(e) => setDetails({ ...details, name: e.target.value })}
             value={details.name}
           />
         </div>
-        <div className="formgroup">
+        <div className={styles.formgroup}>
           <input
             type="text"
             placeholder="Email"
             name="email"
-            id="email"
+            id={styles.email}
             onChange={(e) => setDetails({ ...details, email: e.target.value })}
             value={details.email}
           />
         </div>
-        <div className="formgroup">
+        <div className={styles.formgroup}>
           <input
             type="password"
             placeholder="Password"
             name="password"
-            id="password"
+            id={styles.password}
             onChange={(e) =>
               setDetails({ ...details, password: e.target.value })
             }
             value={details.password}
           />
-          <span className="Forgot-Password">Forgot Password?</span>
+          <span className={styles.ForgotPassword}>Forgot Password?</span>
         </div>
-        <div className="formgroup">
-          <input type="submit" value="LOGIN" id="login" />
-          <a href="" className="New-Here">
+        <div className={styles.formgroup} id={styles.loginButton}>
+          <input type="submit" value="LOGIN" id={styles.login} />
+          <a href="" className={styles.NewHere}>
             New here? Create an account.
           </a>
         </div>

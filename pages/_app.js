@@ -1,11 +1,27 @@
+import React, { useState } from 'react'
+import LoginForm from '../component/loginform'
 import '../styles/globals.css'
 import Layout from '../component/layout'
 
 function MyApp({ Component, pageProps }) {
+  const adminUser = {
+    name: '',
+    email: '',
+    password: '123',
+  }
+
+  const [user, setUser] = useState({ name: '', email: '', password: '' })
+
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      {user.email != '' ? (
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      ) : (
+        <LoginForm />
+      )}
+    </>
   )
 }
 
