@@ -37,24 +37,3 @@ button:focus {
 }
 
 /* Recipe List Styling */
-
-.Recipe {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid yellow;
-  width: 410px;
-  height: 424px;
-}
-
-.Recipe-Image {
-  width: 405px;
-  height: 320px;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.Recipe-Description {
-  border: 2px solid red;
-  width: 405px;
-  min-height: 100px;
-}
