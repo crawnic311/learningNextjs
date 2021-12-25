@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     password: '123',
   }
 
-  const [user, setUser] = useState({ name: '', email: '', password: '' })
+  const [user, setUser] = useState({ name: '', email: 'j', password: '' })
 
   return (
     <>

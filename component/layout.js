@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Layout.module.css'
 import styles2 from '../styles/Home.module.css'
 
@@ -10,55 +11,63 @@ export default function Layout({ children }) {
   }
   return (
     <>
-      <header class={styles2.header}>
-        <nav class={styles.navbar}>
+      <header className={styles2.header}>
+        <nav className={styles.navbar}>
           <Link href="/">
-            <a class={styles.navlogo}>foody</a>
+            <a className={styles.navlogo}>
+              <img
+                src="/foody-logo.png"
+                alt="logo"
+                width="150"
+                height="69"
+                className={styles.FoodyLogo}
+              />
+            </a>
           </Link>
           <ul
-            class={
+            className={
               isOpen === false
                 ? styles.navmenu
                 : styles.navmenu + ' ' + styles.active
             }
           >
-            <li class={styles.navitem}>
+            <li className={styles.navitem}>
               <Link href="/">
-                <a class={styles.navlink}>Home</a>
+                <a className={styles.navlink}>Home</a>
               </Link>
             </li>
-            <li class={styles.navitem}>
+            <li className={styles.navitem}>
               <Link href="/">
-                <a class={styles.navlink}>Create Recipe</a>
+                <a className={styles.navlink}>Create Recipe</a>
               </Link>
             </li>
-            <li class={styles.navitem}>
+            <li className={styles.navitem}>
               <Link href="/about">
-                <a class={styles.navlink}>About</a>
+                <a className={styles.navlink}>About</a>
               </Link>
             </li>
-            <li class={styles.navitem}>
+            <li className={styles.navitem}>
               <Link href="/contact">
-                <a class={styles.navlink}>Contact</a>
+                <a className={styles.navlink}>Contact</a>
               </Link>
             </li>
-            <li class={styles.navitem}>
+            <li className={styles.navitem}>
               <Link href="/">
-                <a class={styles.navlink}>Logout</a>
+                <a className={styles.navlink}>Logout</a>
               </Link>
             </li>
           </ul>
           <button
-            class={
+            className={
               isOpen === false
                 ? styles.hamburger
                 : styles.hamburger + ' ' + styles.active
             }
             onClick={openMenu}
           >
-            <span class={styles.bar}></span>
-            <span class={styles.bar}></span>
-            <span class={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
           </button>
         </nav>
       </header>
